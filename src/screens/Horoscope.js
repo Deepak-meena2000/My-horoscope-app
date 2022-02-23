@@ -30,7 +30,7 @@ const Horoscope =  (zodiacSign) => {
 
             {isSuccess && (
                 <Fragment>
-                    <Text style={styles.item}>Description{data.description}</Text>
+                    <Text style={styles.item}>Description : {data.description}</Text>
                     <Text style={styles.item}>Mood : {data.mood}</Text>
                     <Text style={styles.item}>Current Date : {data.current_date}</Text>
                     <Text style={styles.item}>Date Range: {data.date_range}</Text>
@@ -77,8 +77,12 @@ const styles = StyleSheet.create({
 	},
     item:{
         flex: 1,
-		backgroundColor: colors.white,
+        justifyContent:'center',
+        alignItems:'center',
+        marginLeft:30,
+        marginRight:20,
 		
-        marginTop:10
+        marginTop:10,
+        marginBottom:20
     }
    });
