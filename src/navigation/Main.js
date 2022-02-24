@@ -4,9 +4,7 @@ import Zodiac from '../screens/Zodiac';
 import Horoscope from '../screens/Horoscope';
 const Stack = createStackNavigator();
 
-const Main = props => {
-  console.log(props.isweb, 'welcome to main from app');
-
+const Main = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Zodiac" component={Zodiac} />
